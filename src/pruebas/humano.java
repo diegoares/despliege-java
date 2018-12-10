@@ -6,13 +6,15 @@ import java.util.Scanner;
 
 public class humano {
 	private int id;
+	private String zapato;
 
-	
-	private void hola() {
-		Scanner teclado = new Scanner(System.in);
-		System.out.println("Hola");
+	public String getZapato() {
+		return zapato;
 	}
-	
+
+	public void setZapato(String zapato) {
+		this.zapato = zapato;
+	}
 
 	public int getId() {
 		return id;
@@ -26,4 +28,8 @@ public class humano {
 		File fichero = new File("hola.txt");
 	}
 
+	private void hola() {
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Hola");
+	}
 }
